@@ -1,9 +1,73 @@
 <html>
     <head>
        <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe" rel="stylesheet">
     </head>
     <body>
-	<script src="index.js"></script>
+        <header>
+            <div class="container">
+                <div class="header-wrapper">
+                    <h1> Jimmy's Diner </h1>
+                    <p>The best burgers and pizzas in town.</p>
+                </div>               
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="item-detail">
+                    <img src="images/pizza.jpg" class="item-img">
+                    <div class="item-info">
+                        <h2> Pizza </h2>
+                        <p class="ingredients-style"> pepperoni,mushrom,mozarella </p>
+                        <p class="cost-syle"> $14 </p>
+                    </div>                   
+                    <button class="add-btn"> + </button>
+                </div>
+                <div class="item-detail">
+                    <img src="images/burger.jpg" class="item-img">
+                    <div class="item-info">
+                        <h2> Hamburger </h2>
+                        <p class="ingredients-style"> beef,cheese,lettuce </p>
+                        <p class="cost-syle"> $12 </p>
+                    </div>                   
+                    <button class="add-btn"> + </button>
+                </div>
+                <div class="item-detail">
+                    <img src="images/beer.jpg" class="item-img">
+                    <div class="item-info">
+                        <h2> Beer </h2>
+                        <p class="ingredients-style"> grain,hops,yeast,water </p>
+                        <p class="cost-syle"> $12 </p>
+                    </div>                   
+                    <button class="add-btn"> + </button>
+                </div>
+            </div>      
+        </section>
+        <section>
+            <div class="container">
+                <div class="order-details">
+                    <h3>Your order</h3>
+                    <div class="order-item">
+                        <p class="order-item-name"> Pizza </p>
+                        <button class="remove-btn"> remove </button>
+                        <p class="order-items-cost"> $14 </p>
+                    </div>
+                    <div class="order-item">
+                        <p class="order-item-name"> Beer </p>
+                        <button class="remove-btn"> remove </button>
+                        <p class="order-items-cost"> $12 </p>
+                    </div>
+                    <div class="total-items-price">
+                        <p class="order-item-name"> Total price: </p>
+                        <p class="order-items-cost"> $26 </p>
+                    </div>
+                    <button class="complete-order-btn"> Complete order </button>
+                </div>
+            </div>
+        </section>
+	<script src="index.js" type="module"></script>
     </body>
 </html>
 

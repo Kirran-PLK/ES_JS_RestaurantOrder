@@ -1,3 +1,161 @@
 body {
     margin: 0;
+    font-family: "Smythe", system-ui;
 } 
+
+.container{
+    width: 600px;
+    border: 0px solid black;
+    margin: 0px auto 0px auto;
+}
+
+
+.header-wrapper{
+    height: 70px;
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 46px;
+    gap: 2px;
+    background: url('images/bgImg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-wrapper h1, .header-wrapper p{
+    margin: 0;
+    color: #FFFFFF;
+}
+.header-wrapper h1{
+    font-size: 40px;
+    font-weight: normal;
+    
+}
+
+.header-wrapper p{
+    font-size: 23px;
+}
+
+
+
+.item-detail{
+    border: 0px green solid;
+    height: 140px;
+    width: 508px;
+    margin: 60px auto 0 auto;
+    border-bottom: 2px solid #D2D2D2;
+
+    display: flex;
+
+}
+
+.item-img{
+    height: 90px;
+}
+
+.item-info {
+    border: 0px rgb(0, 2, 128) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0 0 0 31px;
+    
+
+}
+
+.item-info h2{
+    margin: 0;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.item-info p{
+    margin: 0;
+    padding: 5px 0;
+
+}
+
+.ingredients-style{
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.cost-syle{
+    font-size: 20px;
+    color: #000000;
+}
+
+.add-btn {
+    margin: 8px 0 auto auto;
+    border-radius: 50%;
+    width: 50px; /* Set width equal to height */
+    height: 50px;
+    font-size: 28px;
+    font-weight: 0;
+    border: 1px solid #DEDEDE;
+    background: #FFFFFF;
+    top: 8px;
+    right: 0;
+}
+
+.order-details{
+    height: 320px;
+    width: 510px;
+    border: 0px solid brown;
+    margin: 46px;
+/*  display: none; */
+}
+
+h3 {
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-weight: normal;
+    font-size: 28px;
+
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 0px solid black;
+    padding: 0;
+}
+
+.order-item-name{
+    font-size: 28px;
+    margin: 0;
+}
+
+.remove-btn{
+    height: 28px;
+    font-size: 12px;
+    color: #BBBBBB;
+    background: #FFFFFF;
+    border: 0px solid black;
+    padding: 9px 1px;
+}
+
+.order-items-cost{
+    margin: auto 0 auto auto;
+}
+
+.total-items-price{
+     display: flex;
+
+
+     border-top: 2px solid black;
+     margin-top: 15px;
+     padding-top: 10px;
+}
+
+.complete-order-btn{
+    margin: 35px auto;
+    height: 60px;
+    width: 100%;
+    color: white;
+    background: #16DB99;
+    border: none;
+}
