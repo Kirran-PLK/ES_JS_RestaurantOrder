@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Smythe", system-ui;
+    
 } 
 
 .container{
@@ -105,7 +106,7 @@ body {
     width: 510px;
     border: 0px solid brown;
     margin: 46px;
-/*  display: none; */
+    display: none; 
 }
 
 h3 {
@@ -158,4 +159,53 @@ h3 {
     color: white;
     background: #16DB99;
     border: none;
+}
+
+
+.card-details{
+    width: 524px;
+    height: 542px;
+    border: 0px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10000px #757575;
+    z-index: 10;
+    background: #FFFFFF;
+    display: none;
+}
+
+.card-details h2{
+    font-size: 24px;
+    margin: 47px 111px 40px 108px;
+}
+
+.input-fields{
+    font-size: 20px;
+    height: 71px;
+    width: 476px;
+    display: block;
+    margin: 23px auto;
+    padding: 16px 0 14px 27px;
+    border: 1px solid #757575;
+    border-radius: 3px;
+
+}
+
+.pay-btn{
+    height: 71px;
+    width: 476px;
+    display: block;
+    margin: 46px auto 30px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #16DB99;
+    border: none;
+    border-radius: 4px;
+
 }
