@@ -4,6 +4,7 @@ import { selectedItemsPricing } from './selectedItemsPricing.js'
 
 const menuItemsEl = document.getElementById('menu-items')
 const orderDetailsEl = document.getElementById('order-details')
+const cardDetailsEl = document.getElementById('card-details')
 const thankYouCardEl = document.getElementById('thank-you-card')
 
 
@@ -25,26 +26,30 @@ document.addEventListener('click', (e)=>{
 
 function handleCompleteOrder(e){
 
-    const cardDetailsEl = document.getElementById('card-details')
+    
 
     if(e.target.id === 'complete-order')
     {
             cardDetailsEl.classList.remove('hidden')
     }
 
-    else if(e.target.id === 'pay')
-    {   
-        e.preventDefault();
-        const customerName = cardDetailsEl.querySelector('input[name="Customername"]').value;  
-        const form = cardDetailsEl.querySelector('form')
-        form.reset()
-        cardDetailsEl.classList.add('hidden')
-        selectedItemsPricing.reset()
-        renderOrder()
-        renderThankYou(customerName)
-
-
+    else if (e.target.id === 'pay') {
+        
+        e.preventDefault(); 
+        const form = cardDetailsEl.querySelector('form');     
+        
+        if (!form.checkValidity()) {
+            form.reportValidity(); 
+            return;
+        }
+        const customerName = form.querySelector('input[name="Customername"]').value;
+        form.reset(); 
+        cardDetailsEl.classList.add('hidden');
+        selectedItemsPricing.reset();
+        renderOrder();
+        renderThankYou(customerName);
     }
+
 }
 
 function renderThankYou(name)

@@ -83,10 +83,11 @@
                     <h2> Enter card details</h2>
                     <form>
                         <input type="text" placeholder="Enter your name" required class="input-fields" name="Customername">
-                        <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"  placeholder="Enter your card number" required class="input-fields">
-                        <input type="password" inputmode="numeric" minlength="3" maxlength="3" placeholder=" Enter CVV" required class="input-fields">
-                        <input type="submit" class="pay-btn" value =" Pay " id="pay">
+                        <input type="tel" inputmode="numeric" pattern="\d{13,19}" autocomplete="cc-number" maxlength="19" placeholder="Enter your card number" required class="input-fields" name="CardNumber">
+                        <input type="password" inputmode="numeric" pattern="\d{3}" minlength="3" maxlength="3" placeholder="Enter CVV" required class="input-fields" name="CVV">
+                        <input type="submit" class="pay-btn" value="Pay" id="pay">
                     </form>
+
                 </div>
             </div>
         </section>
