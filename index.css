@@ -101,12 +101,21 @@ body {
     right: 0;
 }
 
+.add-btn:active {
+    background: #f0f0f0; 
+    transform: scale(0.95); 
+}
+
+.add-btn:hover {
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
 .order-details{
     height: 320px;
     width: 510px;
     border: 0px solid brown;
     margin: 46px;
-    display: none; 
 }
 
 h3 {
@@ -143,10 +152,9 @@ h3 {
     margin: auto 0 auto auto;
 }
 
+
 .total-items-price{
      display: flex;
-
-
      border-top: 2px solid black;
      margin-top: 15px;
      padding-top: 10px;
@@ -159,6 +167,16 @@ h3 {
     color: white;
     background: #16DB99;
     border: none;
+}
+
+.complete-order-btn:hover {
+    background: #13c38a; 
+    cursor: pointer;
+}
+
+.complete-order-btn:active {
+    background: #11ae7a; 
+    transform: scale(0.98); 
 }
 
 
@@ -176,7 +194,6 @@ h3 {
     box-shadow: 0 0 10000px #757575;
     z-index: 10;
     background: #FFFFFF;
-    display: none;
 }
 
 .card-details h2{
@@ -209,6 +226,16 @@ h3 {
     border-radius: 4px;
 }
 
+.pay-btn:hover {
+    background: #13c38a;
+    cursor: pointer;
+}
+
+.pay-btn:active {
+    background: #11ae7a;
+    transform: scale(0.98);
+}
+
 .thank-you-card {
     width: 500px;
     height: 120px;
@@ -221,10 +248,14 @@ h3 {
     display: flex;
     align-items: center;     
     justify-content: center;
-    display: none;
 }
 
 .thank-you-card p{
     margin: 0;
+}
+
+
+.hidden{
+ display: none;
 }
 

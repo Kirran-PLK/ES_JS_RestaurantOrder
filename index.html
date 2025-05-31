@@ -15,7 +15,8 @@
             </div>
         </header>
         <section>
-            <div class="container">
+            <div class="container" id="menu-items">
+                <!--
                 <div class="item-detail">
                     <img src="images/pizza.jpg" class="item-img">
                     <div class="item-info">
@@ -43,47 +44,56 @@
                     </div>                   
                     <button class="add-btn"> + </button>
                 </div>
+                -->
             </div>      
         </section>
         <section>
             <div class="container">
-                <div class="order-details">
+                <div class="order-details hidden" id="order-details">
                     <h3>Your order</h3>
-                    <div class="order-item">
-                        <p class="order-item-name"> Pizza </p>
-                        <button class="remove-btn"> remove </button>
-                        <p class="order-items-cost"> $14 </p>
-                    </div>
-                    <div class="order-item">
-                        <p class="order-item-name"> Beer </p>
-                        <button class="remove-btn"> remove </button>
-                        <p class="order-items-cost"> $12 </p>
+                    <div id="order-items-list">
+                        <div class="order-item hidden" id="order-pizza-div">
+                            <p class="order-item-name"> Pizza </p>
+                            <button class="remove-btn" data-remove="pizza"> remove </button>
+                            <p class="order-items-cost" id="order-pizza-cost"> $14 </p>
+                        </div>
+                        <div class="order-item hidden" id="order-burger-div">
+                            <p class="order-item-name"> Hamburger </p>
+                            <button class="remove-btn" data-remove="burger"> remove </button>
+                            <p class="order-items-cost" id="order-burger-cost"> $12 </p>
+                        </div>
+                        <div class="order-item hidden" id="order-beer-div">
+                            <p class="order-item-name"> Beer </p>
+                            <button class="remove-btn" data-remove="beer"> remove </button>
+                            <p class="order-items-cost" id="order-beer-cost"> $12 </p>
+                        </div>        
                     </div>
                     <div class="total-items-price">
                         <p class="order-item-name"> Total price: </p>
-                        <p class="order-items-cost"> $26 </p>
+                        <p class="order-items-cost" id="total-cost"> $26 </p>
                     </div>
-                    <button class="complete-order-btn"> Complete order </button>
+                    
+                    <button class="complete-order-btn" id="complete-order"> Complete order </button>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="card-details">
+                <div class="card-details hidden" id="card-details">
                     <h2> Enter card details</h2>
                     <form>
-                        <input type="text" placeholder="Enter your name" class="input-fields">
-                        <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"  placeholder="Enter your card number" class="input-fields">
-                        <input type="password" maxlength="3" placeholder=" Enter CVV" class="input-fields">
-                        <input type="submit" class="pay-btn" value =" Pay ">
+                        <input type="text" placeholder="Enter your name" required class="input-fields" name="Customername">
+                        <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"  placeholder="Enter your card number" required class="input-fields">
+                        <input type="password" inputmode="numeric" minlength="3" maxlength="3" placeholder=" Enter CVV" required class="input-fields">
+                        <input type="submit" class="pay-btn" value =" Pay " id="pay">
                     </form>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="thank-you-card">
-                    <p> Thanks, James! Your order is on its way! </p>
+                <div class="thank-you-card hidden" id="thank-you-card">
+                    <p> Thanks, <span></span>! Your order is on its way! </p>
                 </div>
             </div>
         </section>
